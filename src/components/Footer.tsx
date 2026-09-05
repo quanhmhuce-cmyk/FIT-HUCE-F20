@@ -13,13 +13,13 @@ export const Footer: React.FC<FooterProps> = ({ connectImageUrl }) => {
 
   return (
     <footer id="footer" className="bg-slate-950 border-t border-slate-800 text-slate-400 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-center">
           
-          {/* Col 1: Brand & School info */}
-          <div className="md:col-span-6 space-y-4">
+          {/* Col 1: Brand info */}
+          <div className="md:col-span-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-md">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-gradient-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-md shrink-0">
                 <img
                   src={`${SITE_CONFIG.originalImagesBaseUrl}logotrn.png`}
                   alt="Logo Đội SVTN Khoa CNTT"
@@ -30,39 +30,29 @@ export const Footer: React.FC<FooterProps> = ({ connectImageUrl }) => {
                 />
               </div>
               <div>
-                <span className="text-xs uppercase tracking-wider text-blue-400 font-semibold block">
-                  {SITE_CONFIG.schoolName}
-                </span>
-                <h3 className="text-lg sm:text-xl font-bold text-white">
-                  {SITE_CONFIG.teamName}
-                </h3>
+                <div className="flex items-center gap-1.5">
+                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">
+                    {SITE_CONFIG.teamName}
+                  </h3>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-cyan-300 font-mono border border-cyan-400/30">
+                    F20
+                  </span>
+                </div>
               </div>
             </div>
 
-            <p className="text-sm text-slate-400 leading-relaxed max-w-lg">
-              Tổ chức tình nguyện trực thuộc Khoa Công Nghệ Thông Tin – Trường Đại Học Xây Dựng Hà Nội. 
-              Thành lập từ năm 2006 với tinh thần kỷ luật, nhiệt huyết và đoàn kết.
+            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-lg">
+              Tổ chức tình nguyện trực thuộc Khoa CNTT. Thành lập từ năm 2006 với tinh thần kỷ luật, nhiệt huyết và cống hiến vì cộng đồng.
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-3 text-xs">
-              <a
-                href={SITE_CONFIG.schoolUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 transition"
-              >
-                <Globe className="w-3.5 h-3.5 text-blue-400" />
-                <span>Trường ĐH Xây Dựng Hà Nội</span>
-                <ArrowUpRight className="w-3 h-3" />
-              </a>
-
+            <div className="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs">
               <a
                 href={SITE_CONFIG.formRegisterUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-cyan-300 border border-blue-500/30 transition font-semibold"
               >
-                <span>Đơn Đăng Ký TTVF18</span>
+                <span>Đơn Đăng Ký TTVF20</span>
                 <ArrowUpRight className="w-3 h-3" />
               </a>
             </div>

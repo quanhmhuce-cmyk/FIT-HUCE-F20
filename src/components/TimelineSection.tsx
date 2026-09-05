@@ -22,10 +22,10 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ timelineImageU
             <span>Lộ Trình Tuyển Thành Viên</span>
           </div>
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Quy Trình Gia Nhập Thế Hệ F18
+            Quy Trình Gia Nhập Thế Hệ F20
           </h2>
           <p className="mt-2.5 sm:mt-4 text-xs sm:text-base text-slate-400 max-w-xl mx-auto">
-            Hành trình 4 bước tinh gọn để trở thành một phần của Đội SVTN Khoa Công Nghệ Thông Tin.
+            Hành trình 4 bước tinh gọn để trở thành một phần của {SITE_CONFIG.teamName}.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ timelineImageU
         <div className="max-w-4xl mx-auto mb-10 sm:mb-16 rounded-2xl sm:rounded-3xl p-1 bg-gradient-to-r from-blue-600/30 via-cyan-500/40 to-blue-600/30 shadow-xl">
           <div 
             className="rounded-[18px] sm:rounded-[22px] overflow-hidden bg-slate-950 p-3 sm:p-8 flex flex-col items-center justify-center border border-slate-800 cursor-pointer group"
-            onClick={() => onViewImage && onViewImage(timelineImageUrl, 'Lịch trình Tuyển CTV F18 FIT HUCE')}
+            onClick={() => onViewImage && onViewImage(timelineImageUrl, 'Lịch trình Tuyển CTV F20')}
           >
             <div className="w-full flex items-center justify-between pb-2 text-[11px] text-slate-400 border-b border-slate-800/80 mb-3 sm:hidden">
               <span className="text-cyan-300 font-semibold">Infographic Lộ Trình Tuyển</span>
@@ -45,7 +45,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ timelineImageU
 
             <img
               src={timelineImageUrl}
-              alt="Timeline Tuyển CTV F18 FIT HUCE"
+              alt="Timeline Tuyển CTV F20"
               className="w-full max-h-56 sm:max-h-72 object-contain group-hover:scale-105 transition-transform duration-500"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -173,7 +173,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ timelineImageU
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl sm:rounded-full text-base font-bold text-white bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 shadow-xl shadow-blue-600/30 hover:shadow-cyan-500/25 active:scale-95 transition-all duration-300"
           >
-            <span>ĐĂNG KÍ GIA NHẬP F18 NGAY</span>
+            <span>ĐĂNG KÍ GIA NHẬP F20 NGAY</span>
             <ArrowUpRight className="w-5 h-5" />
           </a>
         </div>

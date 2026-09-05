@@ -56,12 +56,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ bannerUrl, onViewImage
             </span>
           </h1>
 
-          {/* Subheading with original context */}
-          <p className="text-sm sm:text-base md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-6 sm:mb-8 px-1">
-            Chào mừng bạn đến với mái nhà chung của{' '}
-            <strong className="text-white font-semibold">{SITE_CONFIG.teamName}</strong>{' '}
-            – <strong className="text-cyan-300 font-semibold">{SITE_CONFIG.schoolName}</strong>.
-            Nơi nhiệt huyết thanh xuân gặp gỡ tinh thần kỷ luật và sức mạnh công nghệ số!
+          {/* Subheading with clean concise text */}
+          <p className="text-xs sm:text-base md:text-xl text-slate-300 max-w-2xl leading-relaxed mb-6 sm:mb-8 px-2">
+            Chào mừng bạn đến với <strong className="text-white font-semibold">{SITE_CONFIG.teamName}</strong>. Nơi thanh xuân nhiệt huyết kết nối cùng tinh thần kỷ luật và sức mạnh công nghệ!
           </p>
 
           {/* CTA Button Group - Thumb Friendly Touch Sizing */}
@@ -73,7 +70,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ bannerUrl, onViewImage
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl sm:rounded-full text-base font-bold text-white bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 shadow-xl shadow-blue-600/35 hover:shadow-cyan-500/25 active:scale-95 transition-all duration-300 min-h-[48px]"
             >
-              <span className="tracking-wide">ỨNG TUYỂN F18 NGAY</span>
+              <span className="tracking-wide">ỨNG TUYỂN F20 NGAY</span>
               <ArrowUpRight className="w-5 h-5 shrink-0" />
             </a>
 
@@ -108,13 +105,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ bannerUrl, onViewImage
                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500/80 inline-block" />
                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500/80 inline-block" />
                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500/80 inline-block" />
-                  <span className="ml-1.5 text-slate-400 hidden sm:inline">fit-huce.github.io/ttvf18</span>
+                  <span className="ml-1.5 text-slate-400 hidden sm:inline">fit.huce / ttvf20</span>
                 </div>
                 
                 {/* Click to Zoom Banner Badge */}
                 <button
                   type="button"
-                  onClick={() => onViewImage && onViewImage(bannerUrl, 'Ảnh Bìa Tuyển CTV F18')}
+                  onClick={() => onViewImage && onViewImage(bannerUrl, 'Ảnh Bìa Tuyển CTV F20')}
                   className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 bg-blue-950/60 hover:bg-blue-900/60 px-2.5 py-1 rounded-lg border border-blue-500/30 transition text-[11px]"
                 >
                   <ZoomIn className="w-3 h-3" />
@@ -125,11 +122,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ bannerUrl, onViewImage
               {/* Main Banner Image with Tap Gesture */}
               <div 
                 className="relative aspect-[16/8] sm:aspect-[21/9] w-full bg-slate-950 flex items-center justify-center overflow-hidden cursor-pointer"
-                onClick={() => onViewImage && onViewImage(bannerUrl, 'Ảnh Bìa Tuyển CTV F18')}
+                onClick={() => onViewImage && onViewImage(bannerUrl, 'Ảnh Bìa Tuyển CTV F20')}
               >
                 <img
                   src={bannerUrl}
-                  alt="Đội SVTN Khoa Công Nghệ Thông Tin Tuyển CTV F18"
+                  alt="Đội SVTN Khoa Công Nghệ Thông Tin Tuyển CTV F20"
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';

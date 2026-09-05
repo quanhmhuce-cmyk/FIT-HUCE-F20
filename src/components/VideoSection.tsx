@@ -98,7 +98,7 @@ export const VideoSection: React.FC<VideoSectionProps> = ({ videoId }) => {
                     Video Tuyển Quân Thế Hệ Mới
                   </h4>
                   <p className="text-[11px] sm:text-xs text-slate-400">
-                    Đội SVTN Khoa Công Nghệ Thông Tin – Trường Đại Học Xây Dựng Hà Nội
+                    {SITE_CONFIG.teamName}
                   </p>
                 </div>
               </div>

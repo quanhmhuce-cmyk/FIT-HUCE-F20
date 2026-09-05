@@ -20,9 +20,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
 
   const navLinks = [
     { label: 'Giới thiệu', href: '#about' },
+    { label: 'Lộ trình F20', href: '#timeline' },
     { label: 'Khoảnh khắc', href: '#gallery' },
-    { label: 'Các Ban', href: '#departments' },
-    { label: 'Lộ trình F18', href: '#timeline' },
     { label: 'Video', href: '#video' },
   ];
 
@@ -31,8 +30,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
       id="main-navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-slate-950/90 backdrop-blur-md border-b border-blue-500/20 shadow-lg shadow-blue-950/30 py-3'
-          : 'bg-gradient-to-b from-slate-950/90 to-transparent py-5'
+          ? 'bg-slate-950/90 backdrop-blur-md border-b border-blue-500/20 shadow-lg shadow-blue-950/30 py-2.5 sm:py-3'
+          : 'bg-gradient-to-b from-slate-950/90 to-transparent py-3 sm:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,10 +39,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
           {/* Brand Logo & Info */}
           <a
             href="#"
-            className="flex items-center gap-3 group text-left"
+            className="flex items-center gap-2.5 sm:gap-3 group text-left"
             id="nav-logo-link"
           >
-            <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-gradient-to-tr from-blue-700 via-blue-600 to-cyan-400 p-0.5 shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-gradient-to-tr from-blue-700 via-blue-600 to-cyan-400 p-0.5 shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img
                 src={`${SITE_CONFIG.originalImagesBaseUrl}logotrn.png`}
                 alt="Logo FIT HUCE"
@@ -58,15 +57,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
               </div>
             </div>
 
-            <div className="flex flex-col">
-              <span className="text-[10px] sm:text-xs tracking-wider text-blue-300 uppercase font-semibold flex items-center gap-1">
-                <span>{SITE_CONFIG.schoolName}</span>
+            <div className="flex items-center gap-1.5">
+              <span className="text-xs sm:text-base font-bold text-white group-hover:text-cyan-300 transition-colors tracking-tight">
+                ĐỘI SVTN KHOA CNTT
               </span>
-              <span className="text-sm sm:text-base font-bold text-white group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
-                {SITE_CONFIG.teamName}
-                <span className="hidden sm:inline-block px-1.5 py-0.5 rounded text-[10px] bg-blue-500/20 text-blue-300 font-mono border border-blue-400/30">
-                  F18
-                </span>
+              <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-cyan-300 font-mono border border-cyan-400/30 shadow-sm">
+                F20
               </span>
             </div>
           </a>
@@ -158,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
                 rel="noopener noreferrer"
                 className="w-full text-center py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-500 shadow-md"
               >
-                ĐĂNG KÝ GIA NHẬP F18 &gt;&gt;
+                ĐĂNG KÝ GIA NHẬP F20 &gt;&gt;
               </a>
             </div>
           </div>

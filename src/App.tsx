@@ -6,11 +6,9 @@
 import React, { useState, useEffect } from 'react';
 import { SITE_CONFIG, GALLERY_IMAGES } from './data/content';
 import { Navbar } from './components/Navbar';
-import { QuickNavPills } from './components/QuickNavPills';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { GallerySection } from './components/GallerySection';
-import { DepartmentsSection } from './components/DepartmentsSection';
 import { TimelineSection } from './components/TimelineSection';
 import { VideoSection } from './components/VideoSection';
 import { CtaSection } from './components/CtaSection';
@@ -71,9 +69,6 @@ export default function App() {
       {/* Fixed Navigation Header */}
       <Navbar onOpenMediaModal={() => setIsMediaModalOpen(true)} />
 
-      {/* Sticky Mobile/Desktop Quick Navigation Pills */}
-      <QuickNavPills />
-
       {/* Main Content Sections */}
       <main className="flex-1">
         {/* 1. Hero Banner with Volunteer Blue & Tech Accent */}
@@ -82,10 +77,7 @@ export default function App() {
         {/* 2. Original Story & About Section */}
         <AboutSection nightImageUrl={nightImageUrl} onViewImage={handleViewImage} />
 
-        {/* 3. Team Departments */}
-        <DepartmentsSection />
-
-        {/* 4. Recruitment Roadmap & Timeline */}
+        {/* 3. Recruitment Roadmap & Timeline */}
         <TimelineSection timelineImageUrl={timelineImageUrl} onViewImage={handleViewImage} />
 
         {/* 5. Photo Gallery (with Slider & Grid modes) */}
@@ -114,7 +106,7 @@ export default function App() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-300"></span>
           </span>
-          <span>ỨNG TUYỂN F18</span>
+          <span>ỨNG TUYỂN F20</span>
           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </a>
       </div>

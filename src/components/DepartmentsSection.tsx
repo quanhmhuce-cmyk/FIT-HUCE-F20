@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { DEPARTMENTS, SITE_CONFIG } from '../data/content';
-import { Laptop, Camera, Sparkles, Handshake, Check, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { DEPARTMENTS } from '../data/content';
+import { Laptop, Camera, Sparkles, Handshake, Check } from 'lucide-react';
 
 export const DepartmentsSection: React.FC = () => {
   const [selectedDept, setSelectedDept] = useState<string>('all');
@@ -130,7 +130,7 @@ export const DepartmentsSection: React.FC = () => {
                 <span className="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-2 sm:mb-3">
                   Kỹ năng rèn luyện:
                 </span>
-                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {dept.skills.map((skill, sIdx) => (
                     <span
                       key={sIdx}
@@ -141,17 +141,6 @@ export const DepartmentsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* Direct link for mobile students */}
-                <a
-                  href={SITE_CONFIG.formRegisterUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-between sm:justify-start gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 pt-2 border-t border-slate-800/50"
-                >
-                  <span>Ứng tuyển vào {dept.name}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
               </div>
             </div>
           ))}

@@ -29,16 +29,16 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({ onOpenMediaMod
           <span className="text-[10px] font-medium mt-0.5 whitespace-nowrap">Fanpage</span>
         </a>
 
-        {/* Button 2: Các Ban */}
+        {/* Button 2: Về Đội */}
         <a
-          href="#departments"
+          href="#about"
           className="flex flex-col items-center justify-center flex-1 py-1.5 px-1 rounded-xl text-slate-400 hover:text-white active:bg-slate-900 transition-colors"
         >
-          <Users className="w-4 h-4 text-cyan-400" />
-          <span className="text-[10px] font-medium mt-0.5 whitespace-nowrap">4 Ban</span>
+          <Sparkles className="w-4 h-4 text-cyan-400" />
+          <span className="text-[10px] font-medium mt-0.5 whitespace-nowrap">Về Đội</span>
         </a>
 
-        {/* Center Primary CTA: ỨNG TUYỂN F18 */}
+        {/* Center Primary CTA: ỨNG TUYỂN F20 */}
         <a
           id="mobile-bottom-apply-btn"
           href={SITE_CONFIG.formRegisterUrl}
@@ -50,7 +50,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({ onOpenMediaMod
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-300 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
           </span>
-          <span className="tracking-wide">ỨNG TUYỂN F18</span>
+          <span className="tracking-wide">ỨNG TUYỂN F20</span>
           <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
         </a>
 
