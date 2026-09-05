@@ -1,0 +1,6 @@
+{
+  "name": "Đội SVTN Khoa CNTT - Đại Học Xây Dựng Hà Nội",
+  "description": "Website Tuyển Cộng Tác Viên F18 (TTVF18) - Đội Sinh Viên Tình Nguyện Khoa Công Nghệ Thông Tin, Trường Đại Học Xây Dựng Hà Nội.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
