@@ -20,6 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMediaModal }) => {
 
   const navLinks = [
     { label: 'Giới thiệu', href: '#about' },
+    { label: '3 Ban Đội', href: '#departments' },
     { label: 'Lộ trình F20', href: '#timeline' },
     { label: 'Khoảnh khắc', href: '#gallery' },
     { label: 'Video', href: '#video' },

@@ -2,5 +2,7 @@
   "name": "Đội SVTN Khoa CNTT - Tuyển CTV F20",
   "description": "Website Tuyển Cộng Tác Viên F20 (TTVF20) - Đội Sinh Viên Tình Nguyện Khoa Công Nghệ Thông Tin.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

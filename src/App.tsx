@@ -8,6 +8,7 @@ import { SITE_CONFIG, GALLERY_IMAGES } from './data/content';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
+import { DepartmentsSection } from './components/DepartmentsSection';
 import { GallerySection } from './components/GallerySection';
 import { TimelineSection } from './components/TimelineSection';
 import { VideoSection } from './components/VideoSection';
@@ -77,7 +78,10 @@ export default function App() {
         {/* 2. Original Story & About Section */}
         <AboutSection nightImageUrl={nightImageUrl} onViewImage={handleViewImage} />
 
-        {/* 3. Recruitment Roadmap & Timeline */}
+        {/* 3. The 3 Departments */}
+        <DepartmentsSection />
+
+        {/* 4. Recruitment Roadmap & Timeline */}
         <TimelineSection timelineImageUrl={timelineImageUrl} onViewImage={handleViewImage} />
 
         {/* 5. Photo Gallery (with Slider & Grid modes) */}

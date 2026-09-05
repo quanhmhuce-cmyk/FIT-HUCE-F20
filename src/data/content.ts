@@ -45,35 +45,28 @@ export const HIGHLIGHT_STATS = [
   },
 ];
 
-// Danh sách các ban chuyên môn trong Đội SVTN Khoa CNTT
+// Danh sách 3 ban nòng cốt trong Đội SVTN Khoa CNTT
 export const DEPARTMENTS: DepartmentItem[] = [
   {
-    name: 'Ban Chuyên Môn & Kỹ Thuật CNTT',
-    tagline: 'Tech Core & Innovations',
-    desc: 'Ứng dụng kiến thức Công nghệ thông tin vào quản lý, phát triển các nền tảng số, landing page, kỹ thuật sự kiện và hỗ trợ giải pháp số cho các hoạt động của Đội.',
-    iconName: 'Laptop',
-    skills: ['Web/App', 'Hỗ trợ kỹ thuật', 'Tư duy logic', 'Đổi mới sáng tạo'],
-  },
-  {
     name: 'Ban Truyền Thông',
-    tagline: 'Creative & Media Squad',
-    desc: 'Lên ý tưởng kịch bản, thiết kế ấn phẩm đồ họa, chụp ảnh, quay dựng video clip và phụ trách các kênh mạng xã hội (Facebook, TikTok) để lan tỏa hình ảnh áo xanh.',
+    tagline: 'Media & Creative Squad',
+    desc: 'Lên ý tưởng kịch bản, thiết kế ấn phẩm đồ họa, chụp ảnh, quay dựng video clip và quản lý các kênh mạng xã hội (Facebook, TikTok) để lan tỏa hình ảnh màu áo xanh tình nguyện.',
     iconName: 'Camera',
-    skills: ['Content Writing', 'Photoshop/Canva', 'Video Editing', 'Social Media'],
+    skills: ['Sáng tạo nội dung', 'Photoshop / Canva', 'Quay dựng Video', 'Quản trị mạng xã hội'],
   },
   {
-    name: 'Ban Sự Kiện & Phong Trào',
-    tagline: 'Spirit & Event Makers',
-    desc: 'Lên kế hoạch tổ chức các chương trình thiện nguyện, chiến dịch Mùa hè xanh, Tiếp sức mùa thi, hoạt động teambuilding và giao lưu các thế hệ sinh viên.',
+    name: 'Ban Chương Trình',
+    tagline: 'Program & Event Creators',
+    desc: 'Lên kế hoạch, xây dựng kịch bản chi tiết cho các chương trình tình nguyện, hoạt động phong trào, các buổi thiện nguyện, teambuilding và giao lưu gắn kết các thế hệ.',
     iconName: 'Sparkles',
-    skills: ['Tổ chức sự kiện', 'MC / Hoạt náo', 'Quản lý thời gian', 'Lãnh đạo nhóm'],
+    skills: ['Xây dựng kịch bản', 'Tổ chức sự kiện', 'MC / Hoạt náo', 'Tư duy tổ chức'],
   },
   {
-    name: 'Ban Đối Ngoại & Hậu Cần',
-    tagline: 'Logistics & External Relations',
-    desc: 'Cầu nối liên hệ với các đơn vị, nhà tài trợ, phường xã; phụ trách công tác hậu cần, chuẩn bị cơ sở vật chất chu đáo cho mọi chiến dịch.',
-    iconName: 'Handshake',
-    skills: ['Giao tiếp đàm phán', 'Quản lý tài chính/vật phẩm', 'Cẩn thận, chu đáo'],
+    name: 'Ban Hậu Cần',
+    tagline: 'Logistics & Team Backbone',
+    desc: 'Cầu nối chuẩn bị cơ sở vật chất, quản lý đồ đạc trang thiết bị, phụ trách ẩm thực, điều phối phương tiện và đảm bảo mọi chiến dịch diễn ra an toàn, chu đáo nhất.',
+    iconName: 'ShieldCheck',
+    skills: ['Quản lý vật tư', 'Điều phối hậu cần', 'Quản lý tài chính', 'Cẩn thận & Trách nhiệm'],
   },
 ];
 
