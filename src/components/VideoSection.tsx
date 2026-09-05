@@ -95,7 +95,7 @@ export const VideoSection: React.FC<VideoSectionProps> = ({ videoId }) => {
                 </div>
                 <div>
                   <h4 className="text-xs sm:text-base font-bold text-white">
-                    Video Tuyển Quân Thế Hệ Mới
+                    Giới thiệu về đội
                   </h4>
                   <p className="text-[11px] sm:text-xs text-slate-400">
                     {SITE_CONFIG.teamName}
