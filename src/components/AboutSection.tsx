@@ -119,7 +119,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ nightImageUrl, onVie
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-950/85 backdrop-blur-md border border-blue-500/30 text-left">
                   <div className="flex items-center gap-1.5 text-cyan-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-0.5">
                     <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                    <span>Hơn 18 Năm Truyền Thống</span>
+                    <span>Hơn 20 Năm Truyền Thống</span>
                   </div>
                   <div className="text-xs sm:text-sm font-bold text-white flex items-center justify-between">
                     <span>Thế hệ này tiếp bước thế hệ trước</span>
